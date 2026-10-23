@@ -14,7 +14,13 @@ export default function Home() {
       name: "Instagram",
       href: "https://www.instagram.com/burdeos_santiago",
       icon: (
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden="true">
+        <svg
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth="2"
+          aria-hidden="true"
+        >
           <rect x="3" y="3" width="18" height="18" rx="5" />
           <circle cx="12" cy="12" r="4" />
           <circle cx="17.5" cy="6.5" r=".8" fill="currentColor" />
@@ -36,11 +42,15 @@ export default function Home() {
     <main className="min-h-screen bg-black">
       <div className="flex min-h-screen flex-col items-center justify-center px-4 py-10 text-center">
 
-        {/* Logo original de Burdeos */}
+        {/* Logo original de Burdeos con efecto glow */}
         <img
-src="/Logo-Burdeos.png"
+          src="/Logo-Burdeos.png"
           alt="Burdeos Restobar"
           className="mb-4 h-auto w-full max-w-3xl object-contain"
+          style={{
+            filter:
+              "drop-shadow(0 0 8px #ff4d7d) drop-shadow(0 0 20px #ff4d7d)",
+          }}
         />
 
         <p
