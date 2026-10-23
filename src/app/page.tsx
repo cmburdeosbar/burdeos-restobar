@@ -38,7 +38,7 @@ export default function Home() {
 
         {/* Logo original de Burdeos */}
         <img
-          src="/logo-burdeos.png"
+          src="/Logo-Burdeos.png"
           alt="Burdeos Restobar"
           className="mb-4 h-auto w-full max-w-3xl object-contain"
         />
