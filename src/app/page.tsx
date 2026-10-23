@@ -46,14 +46,14 @@ export default function Home() {
         <img
           src="/Logo-Burdeos-1.png"
           alt="Burdeos Restobar"
-          className="mb-5 h-auto w-full max-w-3xl object-contain"
+          className="mb-2 h-auto w-full max-w-3xl object-contain"
           style={{
             filter:
               "drop-shadow(0 0 8px #ff4d7d) drop-shadow(0 0 20px #ff4d7d)",
           }}
         />
 
-        {/* Redes sociales: iconos más grandes */}
+        {/* Redes sociales blancas, más grandes y sin glow */}
         <nav
           aria-label="Redes sociales de Burdeos"
           className="mb-8 flex items-center justify-center gap-10"
@@ -66,10 +66,9 @@ export default function Home() {
               rel="noopener noreferrer"
               aria-label={social.name}
               title={social.name}
-              className="h-10 w-10 transition-transform duration-200 hover:scale-110"
+              className="h-[60px] w-[60px] transition-transform duration-200 hover:scale-110"
               style={{
-                color: "#ff4d7d",
-                filter: "drop-shadow(0 0 7px #ff4d7d)",
+                color: "#ffffff",
               }}
             >
               {social.icon}
@@ -93,9 +92,9 @@ export default function Home() {
           COMUNÍCATE CON NOSOTROS
         </a>
 
-        {/* Dirección al final */}
+        {/* Dirección en negrita */}
         <p
-          className="mt-8 text-sm tracking-widest"
+          className="mt-8 text-sm font-bold tracking-widest"
           style={{
             fontFamily: "var(--font-poppins)",
             color: "#a78bff",
