@@ -44,7 +44,7 @@ export default function Home() {
 
         {/* Logo original de Burdeos con efecto glow */}
         <img
-          src="/Logo-Burdeos.png"
+          src="/Logo-Burdeos-1.png"
           alt="Burdeos Restobar"
           className="mb-4 h-auto w-full max-w-3xl object-contain"
           style={{
