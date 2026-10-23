@@ -40,43 +40,23 @@ export default function Home() {
 
   return (
     <main className="min-h-screen bg-black">
-      <div className="flex min-h-screen flex-col items-center justify-center px-4 py-10 text-center">
+      <div className="flex min-h-screen flex-col items-center justify-center px-4 py-8 text-center">
 
-        {/* Logo original de Burdeos con efecto glow */}
+        {/* Logo de Burdeos con resplandor rosado */}
         <img
-          src="/Logo-Burdeos-1.png"
+          src="/Logo-Burdeos.png"
           alt="Burdeos Restobar"
-          className="mb-4 h-auto w-full max-w-3xl object-contain"
+          className="mb-5 h-auto w-full max-w-3xl object-contain"
           style={{
             filter:
               "drop-shadow(0 0 8px #ff4d7d) drop-shadow(0 0 20px #ff4d7d)",
           }}
         />
 
-        <p
-          className="mb-2 text-xl md:text-2xl tracking-widest"
-          style={{
-            fontFamily: "var(--font-barlow)",
-            color: "#ffa559",
-          }}
-        >
-          RESTOBAR
-        </p>
-
-        <p
-          className="mb-8 text-sm tracking-widest"
-          style={{
-            fontFamily: "var(--font-poppins)",
-            color: "#a78bff",
-          }}
-        >
-          SINCE 2008 · ALAMEDA 2555, SANTIAGO
-        </p>
-
-        {/* Redes sociales */}
+        {/* Redes sociales: iconos más grandes */}
         <nav
           aria-label="Redes sociales de Burdeos"
-          className="mb-8 flex items-center justify-center gap-8"
+          className="mb-8 flex items-center justify-center gap-10"
         >
           {socialLinks.map((social) => (
             <a
@@ -86,7 +66,7 @@ export default function Home() {
               rel="noopener noreferrer"
               aria-label={social.name}
               title={social.name}
-              className="h-7 w-7 transition-transform hover:scale-110"
+              className="h-10 w-10 transition-transform duration-200 hover:scale-110"
               style={{
                 color: "#ff4d7d",
                 filter: "drop-shadow(0 0 7px #ff4d7d)",
@@ -102,7 +82,7 @@ export default function Home() {
           href="https://wa.me/56993127854"
           target="_blank"
           rel="noopener noreferrer"
-          className="px-8 py-4 font-bold tracking-wider transition-transform hover:scale-105"
+          className="px-8 py-4 font-bold tracking-wider transition-transform duration-200 hover:scale-105"
           style={{
             fontFamily: "var(--font-barlow)",
             background: "#ff4d7d",
@@ -112,6 +92,17 @@ export default function Home() {
         >
           COMUNÍCATE CON NOSOTROS
         </a>
+
+        {/* Dirección al final */}
+        <p
+          className="mt-8 text-sm tracking-widest"
+          style={{
+            fontFamily: "var(--font-poppins)",
+            color: "#a78bff",
+          }}
+        >
+          ALAMEDA 2555 · SANTIAGO
+        </p>
 
       </div>
     </main>
