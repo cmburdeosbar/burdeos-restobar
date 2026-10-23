@@ -44,7 +44,7 @@ export default function Home() {
 
         {/* Logo de Burdeos con resplandor rosado */}
         <img
-          src="/Logo-Burdeos.png"
+          src="/Logo-Burdeos-1.png"
           alt="Burdeos Restobar"
           className="mb-5 h-auto w-full max-w-3xl object-contain"
           style={{
